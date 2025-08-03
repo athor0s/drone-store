@@ -1,15 +1,13 @@
 import Header from "@/components/Header";
-import ModernHero from "@/components/ModernHero";
-import ServicesSection from "@/components/ServicesSection";
+import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
-export default function Home() {
+export default function ContactPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
       <main>
-        <ModernHero />
-        <ServicesSection />
+        <ContactSection />
       </main>
       <Footer />
     </div>

@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DroneStore - Магазин дронов
 
-## Getting Started
+Современный минималистичный интернет-магазин дронов, созданный с использованием Next.js, TypeScript и Tailwind CSS.
 
-First, run the development server:
+## 🚀 Особенности
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Современный дизайн**: Минималистичный белый дизайн с чистыми линиями
+- **Responsive**: Полностью адаптивный дизайн для всех устройств
+- **TypeScript**: Типобезопасный код для лучшей разработки
+- **Tailwind CSS**: Быстрая стилизация с утилитарными классами
+- **FontAwesome**: Красивые иконки для лучшего UX
+- **Next.js 15**: Последняя версия с App Router
+
+## 🛠 Технологии
+
+- [Next.js 15](https://nextjs.org/) - React фреймворк
+- [TypeScript](https://www.typescriptlang.org/) - Типизированный JavaScript
+- [Tailwind CSS](https://tailwindcss.com/) - CSS фреймворк
+- [FontAwesome](https://fontawesome.com/) - Иконки
+- [pnpm](https://pnpm.io/) - Пакетный менеджер
+
+## 🚀 Быстрый старт
+
+1. **Установка зависимостей:**
+   ```bash
+   pnpm install
+   ```
+
+2. **Запуск dev сервера:**
+   ```bash
+   pnpm dev
+   ```
+
+3. **Открыть [http://localhost:3000](http://localhost:3000) в браузере**
+
+## 📁 Структура проекта
+
+```
+src/
+├── app/
+│   ├── page.tsx          # Главная страница
+│   ├── layout.tsx        # Основной layout
+│   └── globals.css       # Глобальные стили
+└── components/
+    ├── Header.tsx        # Шапка сайта
+    ├── Hero.tsx          # Главный баннер
+    ├── ProductCatalog.tsx # Каталог товаров
+    ├── AboutSection.tsx  # Секция "О нас"
+    ├── ContactSection.tsx # Форма контактов
+    └── Footer.tsx        # Подвал сайта
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Дизайн
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Дизайн сосредоточен на:
+- Минимализме и чистоте
+- Белой цветовой схеме с синими акцентами
+- Современной типографике
+- Плавных анимациях и переходах
+- Отличном UX на всех устройствах
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Доступные скрипты
 
-## Learn More
+- `pnpm dev` - Запуск development сервера
+- `pnpm build` - Сборка для production
+- `pnpm start` - Запуск production сервера
+- `pnpm lint` - Проверка кода линтером
 
-To learn more about Next.js, take a look at the following resources:
+## 🔧 Настройка
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Проект использует стандартную конфигурацию Next.js с Tailwind CSS. Все настройки находятся в корневых файлах конфигурации.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📝 Лицензия
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT License - см. файл LICENSE для деталей.
