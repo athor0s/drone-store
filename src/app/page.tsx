@@ -1,15 +1,17 @@
 import Header from "@/components/Header";
-import ModernHero from "@/components/ModernHero";
-import ServicesSection from "@/components/ServicesSection";
+import CatalogHero from "@/components/CatalogHero";
+import DroneBrandsScroll from "@/components/DroneBrandsScroll";
+import BrowsingHistory from "@/components/BrowsingHistory";
 import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       <Header />
-      <main>
-        <ModernHero />
-        <ServicesSection />
+      <main className="relative">
+        <CatalogHero />
+        <DroneBrandsScroll />
+        <BrowsingHistory />
       </main>
       <Footer />
     </div>
