@@ -27,156 +27,116 @@ const Header = () => {
   const catalogCategories = [
     {
       id: 'drones',
-      name: 'Квадрокоптеры',
+      name: 'квадрокоптеры',
       icon: faPlane,
       subcategories: [
-        { name: 'Профессиональные дроны', count: 45 },
-        { name: 'Любительские квадрокоптеры', count: 67 },
-        { name: 'Мини-дроны', count: 23 },
-        { name: 'Гоночные дроны', count: 34 },
-        { name: 'Дроны с 4K камерой', count: 28 },
-        { name: 'Промышленные дроны', count: 15 }
+        { name: 'профессиональные дроны', count: 45 },
+        { name: 'любительские квадрокоптеры', count: 67 },
+        { name: 'мини-дроны', count: 23 },
+        { name: 'гоночные дроны', count: 34 },
+        { name: 'дроны с 4K камерой', count: 28 },
+        { name: 'промышленные дроны', count: 15 }
       ]
     },
     {
       id: 'accessories',
-      name: 'Аксессуары',
+      name: 'аксессуары',
       icon: faCog,
       subcategories: [
-        { name: 'Пропеллеры', count: 89 },
-        { name: 'Защита пропеллеров', count: 34 },
-        { name: 'Чехлы и кейсы', count: 45 },
-        { name: 'Крепления', count: 67 },
-        { name: 'Светодиодная подсветка', count: 23 },
-        { name: 'Запчасти', count: 156 }
+        { name: 'пропеллеры', count: 89 },
+        { name: 'защита пропеллеров', count: 34 },
+        { name: 'чехлы и кейсы', count: 45 },
+        { name: 'крепления', count: 67 },
+        { name: 'светодиодная подсветка', count: 23 },
+        { name: 'запчасти', count: 156 }
       ]
     },
     {
       id: 'batteries',
-      name: 'Батареи и питание',
+      name: 'батареи и питание',
       icon: faBattery,
       subcategories: [
-        { name: 'LiPo батареи', count: 78 },
-        { name: 'Зарядные устройства', count: 34 },
-        { name: 'Батарейные банки', count: 23 },
-        { name: 'USB кабели', count: 45 },
-        { name: 'Адаптеры питания', count: 28 },
-        { name: 'Балансировочные зарядки', count: 19 }
-      ]
-    },
-    {
-      id: 'cameras',
-      name: 'Камеры и подвесы',
-      icon: faVideo,
-      subcategories: [
-        { name: 'Экшн-камеры', count: 45 },
-        { name: 'Гимбалы', count: 28 },
-        { name: 'FPV камеры', count: 34 },
-        { name: 'Стабилизаторы', count: 23 },
-        { name: 'Объективы', count: 15 },
-        { name: 'Фильтры для камер', count: 37 }
+        { name: 'lipo батареи', count: 78 },
+        { name: 'зарядные устройства', count: 34 },
+        { name: 'батарейные банки', count: 23 },
+        { name: 'usb кабели', count: 45 },
+        { name: 'адаптеры питания', count: 28 },
+        { name: 'балансировочные зарядки', count: 19 }
       ]
     },
     {
       id: 'fpv',
-      name: 'FPV оборудование',
+      name: 'fpv оборудование',
       icon: faGamepad,
       subcategories: [
-        { name: 'FPV очки', count: 23 },
-        { name: 'Передатчики видео', count: 34 },
-        { name: 'Приемники', count: 45 },
-        { name: 'Антенны', count: 67 },
-        { name: 'Мониторы', count: 19 },
-        { name: 'Симуляторы', count: 12 }
-      ]
-    },
-    {
-      id: 'education',
-      name: 'Обучение и курсы',
-      icon: faGraduationCap,
-      subcategories: [
-        { name: 'Курсы пилотирования', count: 8 },
-        { name: 'Книги и руководства', count: 15 },
-        { name: 'Онлайн-курсы', count: 12 },
-        { name: 'Сертификация', count: 6 },
-        { name: 'Практические занятия', count: 10 },
-        { name: 'Групповые курсы', count: 4 }
+        { name: 'fpv очки', count: 23 },
+        { name: 'передатчики видео', count: 34 },
+        { name: 'приемники', count: 45 },
+        { name: 'антенны', count: 67 },
+        { name: 'мониторы', count: 19 },
+        { name: 'симуляторы', count: 12 }
       ]
     }
   ];
 
   return (
     <>
-      <header className="bg-white/95 backdrop-blur-md border-b border-gray-200/50 sticky top-0 z-50">
+      <header className="bg-white/80 backdrop-blur-md sticky top-0 z-50">
         {/* Main Header */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20">            {/* Logo */}
-            <div className="flex items-center">
-              <Link href="/" className="text-3xl font-light tracking-tight text-gray-900 hover:text-blue-600 transition-colors">
-                Drone<span className="font-medium">Store</span>
+                <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="flex items-center py-8">
+            {/* Left side - Logo and Navigation */}
+            <div className="flex items-center space-x-16 flex-1">
+              {/* Logo */}
+              <Link href="/" className="text-3xl font-extralight tracking-wide text-blue-600 transition-all duration-300">
+                дрон<span className="font-light">стор</span>
               </Link>
+
+              {/* Desktop Navigation */}
+              <nav className="hidden lg:flex items-center space-x-12">
+                <button
+                  onClick={() => setIsCatalogOpen(!isCatalogOpen)}
+                  className={`px-6 py-2 ${isCatalogOpen ? 'bg-blue-50 border-blue-200 text-blue-700' : 'bg-gray-50 border-gray-200 text-gray-700'} hover:bg-gray-100 hover:text-gray-900 font-extralight text-base tracking-wide transition-all duration-300 rounded-full border hover:border-gray-300`}
+                >
+                  каталог
+                </button>
+              </nav>
             </div>
 
-            {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center space-x-10">
-              <button
-                onClick={() => setIsCatalogOpen(!isCatalogOpen)}
-                className="flex items-center space-x-2 text-gray-700 hover:text-gray-900 font-medium transition-colors"
-              >
-                <FontAwesomeIcon icon={faList} className="w-4 h-4" />
-                <span>Каталог</span>
-              </button>
-              <Link 
-                href="/about" 
-                className="text-gray-700 hover:text-gray-900 font-medium transition-colors"
-              >
-                О нас
-              </Link>
-              <Link 
-                href="/contact" 
-                className="text-gray-700 hover:text-gray-900 font-medium transition-colors"
-              >
-                Контакты
-              </Link>
-            </nav>
-
-            {/* Search Bar */}
-            <div className="hidden md:flex flex-1 max-w-lg mx-8">
-              <div className="relative w-full">
-                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                  <FontAwesomeIcon icon={faSearch} className="w-4 h-4 text-gray-400" />
-                </div>
-                <input
-                  type="text"
-                  placeholder="Найти дрон мечты..."
-                  className="w-full pl-12 pr-4 py-3 bg-white text-gray-900 rounded-xl border border-gray-300 focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 placeholder-gray-400"
-                />
-              </div>
+            {/* Center - Search Input */}
+            <div className="relative hidden lg:block flex-shrink-0">
+              <input
+                type="text"
+                placeholder="поиск товаров..."
+                className="w-96 px-6 py-3 bg-gray-50/80 border border-gray-200 rounded-full font-extralight text-base tracking-wide text-gray-700 placeholder-gray-500 focus:outline-none focus:bg-white focus:border-blue-200 transition-all duration-300"
+              />
+              <FontAwesomeIcon 
+                icon={faSearch} 
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" 
+              />
             </div>
 
             {/* Right side actions */}
-            <div className="flex items-center space-x-6">
-              <button className="relative text-gray-700 hover:text-gray-900 transition-colors p-2">
+            <div className="flex items-center space-x-6 flex-1 justify-end">
+              <button className="relative text-gray-600 hover:text-gray-900 transition-all duration-300 hover:scale-110">
                 <FontAwesomeIcon icon={faHeart} className="w-5 h-5" />
-                <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
-                  3
+                <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-3 h-3 flex items-center justify-center">
                 </span>
               </button>
               
-              <button className="relative text-gray-700 hover:text-gray-900 transition-colors p-2">
+              <button className="relative text-gray-600 hover:text-gray-900 transition-all duration-300 hover:scale-110">
                 <FontAwesomeIcon icon={faShoppingCart} className="w-5 h-5" />
-                <span className="absolute -top-1 -right-1 bg-blue-600 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
-                  2
+                <span className="absolute -top-1 -right-1 bg-blue-600 text-white text-xs rounded-full w-3 h-3 flex items-center justify-center">
                 </span>
               </button>
               
-              <button className="text-gray-700 hover:text-gray-900 transition-colors p-2">
+              <button className="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:scale-110">
                 <FontAwesomeIcon icon={faUser} className="w-5 h-5" />
               </button>
                             
               {/* Mobile menu button */}
               <button 
-                className="lg:hidden text-gray-700 hover:text-gray-900 transition-colors p-2"
+                className="lg:hidden text-gray-600 hover:text-gray-900 transition-all duration-300"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               >
                 <FontAwesomeIcon icon={faBars} className="w-5 h-5" />
@@ -184,132 +144,87 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </header>      {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div className="lg:hidden bg-white border-b border-gray-200">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 space-y-4">
-            <div className="relative">
-              <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                <FontAwesomeIcon icon={faSearch} className="w-4 h-4 text-gray-400" />
-              </div>
-              <input
-                type="text"
-                placeholder="Найти дрон мечты..."
-                className="w-full pl-12 pr-4 py-3 bg-white text-gray-900 rounded-xl border border-gray-300 focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 placeholder-gray-400"
-              />
-            </div>
-            <nav className="space-y-3">
-              <button
-                onClick={() => {
-                  setIsCatalogOpen(!isCatalogOpen);
-                  setIsMobileMenuOpen(false);
-                }}
-                className="flex items-center space-x-2 text-gray-700 hover:text-gray-900 font-medium py-2"
-              >
-                <FontAwesomeIcon icon={faList} className="w-4 h-4" />
-                <span>Каталог</span>
-              </button>
-              <Link 
-                href="/about" 
-                className="block text-gray-700 hover:text-gray-900 font-medium py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                О нас
-              </Link>
-              <Link 
-                href="/contact" 
-                className="block text-gray-700 hover:text-gray-900 font-medium py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Контакты
-              </Link>
-            </nav>
-          </div>
-        </div>
-      )}
+      </header>
 
-      {/* Catalog Dropdown */}
+      {/* Catalog Overlay */}
       {isCatalogOpen && (
-        <div className="fixed inset-0 z-40 bg-black/20" onClick={() => setIsCatalogOpen(false)}>
+        <div className="fixed inset-0 z-40 bg-black/20 backdrop-blur-sm" onClick={() => setIsCatalogOpen(false)}>
           <div 
-            className="absolute top-20 left-0 right-0 bg-white shadow-2xl"
+            className="absolute top-24 left-0 right-0 bg-white/95 backdrop-blur-md shadow-xl max-h-[80vh] overflow-y-auto rounded-b-[3rem]"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="max-w-6xl mx-auto p-12">
-              <div className="mb-8">
-                <h2 className="text-2xl font-light text-center text-gray-900">Каталог</h2>
-              </div>
-              
-              <div className="flex justify-center">
-                <div className="grid grid-cols-3 gap-16">
+            <div className="max-w-7xl mx-auto flex min-h-full">
+              {/* Left Sidebar - Categories */}
+              <div className="w-80 bg-gray-50/50 p-8 border-r border-gray-200/50 sticky top-0 h-fit rounded-bl-[3rem]">
+                <h3 className="text-2xl font-extralight text-gray-900 mb-8 tracking-wide">каталог товаров</h3>
+                <div className="space-y-2">
                   {catalogCategories.map((category) => (
-                    <div key={category.id} className="group">
-                      <Link
-                        href={`/catalog/${category.id}`}
-                        className="block text-center"
-                        onClick={() => setIsCatalogOpen(false)}
-                      >
-                        <div className="w-24 h-24 mx-auto mb-4 bg-gray-100 rounded-full flex items-center justify-center group-hover:bg-blue-600 transition-all duration-300">
-                          <FontAwesomeIcon
-                            icon={category.icon}
-                            className="w-10 h-10 text-gray-600 group-hover:text-white transition-colors duration-300"
-                          />
-                        </div>
-                        <h3 className="text-sm font-medium text-gray-900 group-hover:text-blue-600 transition-colors">
-                          {category.name}
-                        </h3>
-                      </Link>
-                      
-                      <div className="mt-4 space-y-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        {category.subcategories.slice(0, 4).map((subcategory, index) => (
+                    <Link
+                      key={category.id}
+                      href={`/catalog/${category.id}`}
+                      onClick={() => setIsCatalogOpen(false)}
+                      className="flex items-center p-4 rounded-2xl hover:bg-white/80 transition-colors duration-200 group"
+                    >
+                      <FontAwesomeIcon
+                        icon={category.icon}
+                        className="w-5 h-5 text-blue-600 mr-4"
+                      />
+                      <span className="text-gray-700 font-extralight tracking-wide text-lg">{category.name}</span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              {/* Right Content - Subcategories */}
+              <div className="flex-1 p-10 rounded-br-[3rem]">
+                <div className="grid grid-cols-3 gap-10">
+                  {catalogCategories.map((category) => (
+                    <div key={category.id} className="space-y-4">
+                      <h4 className="text-xl font-extralight text-gray-900 mb-6 tracking-wide">{category.name}</h4>
+                      <div className="space-y-3">
+                        {category.subcategories.map((subcategory, index) => (
                           <Link
                             key={index}
                             href={`/catalog/${category.id}/${subcategory.name.toLowerCase().replace(/\s+/g, '-')}`}
-                            className="block text-xs text-gray-500 hover:text-blue-600 transition-colors text-center"
+                            className="block text-base text-gray-500 hover:text-blue-600 transition-colors duration-200 font-extralight tracking-wide py-1"
                             onClick={() => setIsCatalogOpen(false)}
                           >
-                            {subcategory.name}
+                            {subcategory.name} <span className="text-gray-400 font-extralight">{subcategory.count}</span>
                           </Link>
                         ))}
                       </div>
                     </div>
                   ))}
                 </div>
-              </div>
-              
-              <div className="mt-12 pt-8 border-t border-gray-200">
-                <div className="flex justify-center space-x-12">
+                
+                <div className="mt-12 pt-8 border-t border-gray-200/50 text-center">
                   <Link
-                    href="/services"
-                    className="text-sm text-gray-600 hover:text-blue-600 transition-colors"
+                    href="/catalog"
                     onClick={() => setIsCatalogOpen(false)}
+                    className="inline-flex items-center px-8 py-3 border border-blue-600 text-blue-600 rounded-full font-extralight text-base tracking-wide hover:bg-blue-50 transition-colors duration-200"
                   >
-                    Сервис и ремонт
-                  </Link>
-                  <Link
-                    href="/education"
-                    className="text-sm text-gray-600 hover:text-blue-600 transition-colors"
-                    onClick={() => setIsCatalogOpen(false)}
-                  >
-                    Обучение
-                  </Link>
-                  <Link
-                    href="/reviews"
-                    className="text-sm text-gray-600 hover:text-blue-600 transition-colors"
-                    onClick={() => setIsCatalogOpen(false)}
-                  >
-                    Обзоры и тесты
-                  </Link>
-                  <Link
-                    href="/support"
-                    className="text-sm text-gray-600 hover:text-blue-600 transition-colors"
-                    onClick={() => setIsCatalogOpen(false)}
-                  >
-                    Поддержка 24/7
+                    смотреть весь каталог
                   </Link>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      )}      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div className="lg:hidden bg-white/90 backdrop-blur-md">
+          <div className="max-w-7xl mx-auto px-6 py-8 space-y-6">
+            <nav className="space-y-6">
+              <button
+                onClick={() => {
+                  setIsCatalogOpen(!isCatalogOpen);
+                  setIsMobileMenuOpen(false);
+                }}
+                className="block w-full text-left px-6 py-3 bg-gray-50 hover:bg-gray-100 text-gray-700 hover:text-gray-900 font-extralight text-lg tracking-wide transition-all duration-300 rounded-full border border-gray-200"
+              >
+                каталог
+              </button>
+            </nav>
           </div>
         </div>
       )}

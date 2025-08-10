@@ -56,7 +56,7 @@ export default function DroneBrandsScroll() {
   };
 
   return (
-    <section className="bg-gray-50 py-12 overflow-hidden">
+    <section className="bg-white py-12 overflow-hidden border-t border-gray-100">
       <div className="w-full">
         {/* Scrolling container with mask */}
         <div className="relative overflow-hidden">
@@ -92,8 +92,8 @@ export default function DroneBrandsScroll() {
           </div>
           
           {/* Fade gradients - увеличиваем для широкой области */}
-          <div className="absolute left-0 top-0 w-48 h-full bg-gradient-to-r from-gray-50 from-50% via-gray-50/95 via-70% to-transparent pointer-events-none z-10"></div>
-          <div className="absolute right-0 top-0 w-48 h-full bg-gradient-to-l from-gray-50 from-50% via-gray-50/95 via-70% to-transparent pointer-events-none z-10"></div>
+          <div className="absolute left-0 top-0 w-48 h-full bg-gradient-to-r from-white from-50% via-white/95 via-70% to-transparent pointer-events-none z-10"></div>
+          <div className="absolute right-0 top-0 w-48 h-full bg-gradient-to-l from-white from-50% via-white/95 via-70% to-transparent pointer-events-none z-10"></div>
         </div>
       </div>
     </section>

@@ -1,6 +1,5 @@
 import Header from "@/components/Header";
 import CatalogHero from "@/components/CatalogHero";
-import DroneBrandsScroll from "@/components/DroneBrandsScroll";
 import BrowsingHistory from "@/components/BrowsingHistory";
 import Footer from "@/components/Footer";
 
@@ -10,7 +9,6 @@ export default function Home() {
       <Header />
       <main className="relative">
         <CatalogHero />
-        <DroneBrandsScroll />
         <BrowsingHistory />
       </main>
       <Footer />
