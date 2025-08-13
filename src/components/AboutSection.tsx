@@ -15,7 +15,7 @@ export default function AboutSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Почему выбирают <span className="text-blue-600">нас</span>
+            Почему выбирают <span className="font-nauryz text-blue-600">нас</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Мы - команда профессионалов, страстно увлеченных технологиями дронов 

@@ -53,7 +53,7 @@ export default function BrowsingHistory() {
               <FontAwesomeIcon icon={faHistory} className="w-7 h-7 text-gray-400" />
             </div>
             <div>
-              <h2 className="text-4xl font-extralight text-gray-900 mb-2 tracking-wide">история просмотра</h2>
+              <h2 className="text-4xl font-extralight text-gray-900 mb-2 tracking-wide">история <span className="font-nauryz">просмотра</span></h2>
               <p className="text-gray-500 font-extralight text-lg tracking-wide">недавно просмотренные товары</p>
             </div>
           </div>

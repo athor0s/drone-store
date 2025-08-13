@@ -14,7 +14,7 @@ export default function CatalogHero() {
           {/* Main heading */}
           <h1 className="text-6xl lg:text-8xl font-extralight tracking-wide text-gray-900 mb-8">
             пиздатый{' '}
-            <span className="font-light text-blue-600">
+            <span className="font-nauryz text-blue-600">
               дрон
             </span>
           </h1>

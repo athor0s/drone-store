@@ -1,4 +1,25 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* NAURYZREDKEDS Font */
+@font-face {
+  font-family: 'NAURYZREDKEDS';
+  src: url('/fonts/NAURYZREDKEDS.woff2') format('woff2'),
+       url('/fonts/NAURYZREDKEDS.woff') format('woff'),
+       url('/fonts/NAURYZREDKEDS.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Font utility classes */
+.font-nauryz {
+  font-family: 'NAURYZREDKEDS', sans-serif;
+}
+
+.font-onest {
+  font-family: 'Onest', sans-serif;
+}
 
 :root {
   --background: #ffffff;
